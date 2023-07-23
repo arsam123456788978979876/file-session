@@ -1,0 +1,253 @@
+*,*::after , *::before {
+    box-sizing: border-box;
+}
+body {
+    direction: rtl;
+    padding: 0;
+    margin: 0;
+    font-family: t;
+}
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+ul , li {
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+}
+/* .................................header....................................... */
+.header .wrapper .menu li:first-child{
+    padding: 0;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: yellow;
+    width: 100%;
+    z-index: 1;
+}
+.logo {
+    float: left;
+    color: black;
+}
+.logo a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+.menu li {
+    float: right;
+    font-size: 20px;
+    padding-right: 20px;
+    margin-top: 7px;
+}
+ a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(84, 84, 211);
+}
+h1 , h2 , p {
+    margin: 0;
+}
+/* ..............................chest................................ */
+ .chest {
+    text-align: center;
+    background: rgb(142, 221, 142);
+ }
+ .chest img {
+    border-radius: 50%;
+    margin-top: 130px;
+ }
+ .chest h2 {
+    margin-bottom: 80px;
+    padding: 25px 0;
+    margin-bottom: 20px;
+ }
+ .chest h1 {
+    margin-top: 20px;
+ }
+ /* ............................knee................................... */
+ .knee {
+    padding-bottom: 15px;
+ }
+ .column-3.column {
+    padding-right: 0;
+ }
+ .column {
+    float: left;
+    padding-right: 30px;
+ }
+ .column-1.column , .column-3.column {
+    width: 30%;
+ }
+ .column-1.column p, .column-3.column p {
+  line-height: 30px;
+ }
+ .column-2.column {
+    width: 40%;
+ }
+ .column-2.column img {
+    width: 100%;
+ }
+ .content-box {
+    position: relative;
+ }
+ .column-2.column .content-box .information {
+    position: absolute;
+    background: rgba(69, 69, 219,0.7);
+    bottom: 0;
+    color: white;
+    opacity: 0;
+    transition: all 1s;
+    font-size: 13px;
+ }
+ .column-2.column .content-box:hover .information {
+    opacity: 1;
+ }
+ .information h3 {
+    text-align: center;
+    margin: 3px 0;
+ }
+ .column-2.column div.p {
+        line-height: 25px;
+ }
+ .column h2 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(5, 89, 154);
+ }
+ .information p {
+    width: 90%;
+    margin-right: 21px;
+ }
+ /* ...........................footer............................ */
+ 
+ .footer {
+    background: rgb(175, 169, 169);
+    text-align: center;
+    padding: 10px 0;
+ }
+ /* ..........................fonts................................ */
+
+ @font-face {
+    font-family: t;
+    src: url('../session-7onetry/assets/fonts/vazir/Vazirmatn-FD-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: t;
+    src: url('../session-7onetry/assets/fonts/vazir/Vazirmatn-FD-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: t;
+    src: url('../session-7onetry/assets/fonts/vazir/Vazirmatn-FD-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: t;
+    src: url('../session-7onetry/assets/fonts/vazir/Vazirmatn-FD-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: t;
+    src: url('../session-7onetry/assets/fonts/vazir/Vazirmatn-FD-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: t;
+    src: url('../session-7onetry/assets/fonts/vazir/Vazirmatn-FD-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: t;
+    src: url('../session-7onetry/assets/fonts/vazir/Vazirmatn-FD-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: t;
+    src: url('../session-7onetry/assets/fonts/vazir/Vazirmatn-FD-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: t;
+    src: url('../session-7onetry/assets/fonts/vazir/Vazirmatn-FD-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  /* ..............................................responsive..................................................... */
+  @media only screen and (max-width:1250px) {
+    .wrapper {
+        width: 100%;
+        padding: 0 30px;
+    }
+  }
+  @media only screen and (max-width:1050px){
+    .column-2.column{
+        padding: 0;
+    }
+    .column-1.column , .column-2.colomn{
+        width: 50%;
+    }
+    .column-3.column {
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width:680px){
+    .header {
+        text-align: center;
+    }
+    .logo{
+        float: none;
+    }
+  }
+  @media only screen and (max-width:700px) {
+    .column-1.column {
+        padding: 0;
+    }
+    .column-1.column , .column-2.column , .column-3.column {
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width:460px){
+    .chest img{
+        width: 200px;
+        height: auto;
+    }
+    .chest h1,.chest h2 {
+        font-size: 16px;
+    }
+  }
+  
